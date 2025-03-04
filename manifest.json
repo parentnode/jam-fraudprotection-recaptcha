@@ -1,0 +1,10 @@
+{
+	"version":"0.1",
+	"files": {
+		"classes/recaptcha.class.php": "classes/adapters/fraudprotection/recaptcha.class.php",
+		"templates/index.php": "templates/janitor/modules/fraudprotection/recaptcha/index.php",
+
+		"www/css/s-recaptcha.css": "www/janitor/css/setup/modules/s-recaptcha.css",
+		"www/js/m-recaptcha.js": "www/janitor/js/setup/modules/m-recaptcha.js"
+	}
+}
