@@ -5,6 +5,7 @@ class JanitorRecaptcha extends Module {
 
 	private $recaptcha_site_key;
 	private $recaptcha_secret_key;
+	private $acceptable_score;
 
 	public $module_group_id;
 	public $module_id;
