@@ -1,6 +1,6 @@
 <?php
 
-class JanitorTelegram extends Module {
+class JanitorRecaptcha extends Module {
 
 
 	private $recaptcha_site_key;
