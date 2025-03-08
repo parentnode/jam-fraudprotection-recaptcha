@@ -11,5 +11,6 @@ $this->fraudprotection_connection(
 		"type" => "recaptcha",
 		"recaptcha_site_key" => "###RECAPTCHA_SITE_KEY###",
 		"recaptcha_secret_key" => "###RECAPTCHA_SECRET_KEY###",
+		"acceptable_score" => "###ACCEPTABLE_SCORE###",
 	)
 );
