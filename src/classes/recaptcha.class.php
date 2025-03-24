@@ -81,7 +81,7 @@ class JanitorRecaptcha extends Module {
 
 	}
 
-	function getEvaluation($_options) {
+	function getEvaluation($_options = false) {
 
 		$token = false;
 
@@ -105,11 +105,11 @@ class JanitorRecaptcha extends Module {
 					"secret" => $this->recaptcha_secret_key,
 				]
 			]);
-			debug([$recaptcha_response]);
+			// debug([$recaptcha_response]);
 
 			if($recaptcha_response && $recaptcha_response["http_code"] === 200) {
 
-				$response = json_decode($recaptcha_response["body"]);
+				$response = json_decode($recaptcha_response["body"], true);
 				if($response && $response["success"] && $response["score"] > $this->acceptable_score) {
 					return ["status" => "valid", "response" => $response];
 				}
