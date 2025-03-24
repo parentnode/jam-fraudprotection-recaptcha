@@ -56,7 +56,7 @@ class JanitorRecaptcha extends Module {
 
 	}
 
-	function getSiteKey($_options) {
+	function getSiteKey($_options = false) {
 
 		$key_only = false;
 
