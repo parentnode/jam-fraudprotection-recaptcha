@@ -1,0 +1,5 @@
+#content .scene.fraudprotection-recaptcha p {}
+
+#content .scene.fraudprotection-recaptcha div.configuration form {
+	padding: 0 0 20px;
+}

@@ -1,6 +1,8 @@
 <?php
 
-class JanitorRecaptcha extends Module {
+
+
+class JanitorRecaptcha extends Model {
 
 
 	private $recaptcha_site_key;
@@ -95,8 +97,12 @@ class JanitorRecaptcha extends Module {
 			}
 		}
 
-		if($token) {
+		// If token was not passed, then check default post location, gtoken
+		if(!$token) {
+			$token = getPost("gtoken");
+		}
 
+		if($token) {
 			$recaptcha_response = curl()->request("https://www.google.com/recaptcha/api/siteverify", [
 				"method" => "post",
 				"inputs" => [

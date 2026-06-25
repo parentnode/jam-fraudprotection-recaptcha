@@ -1,10 +1,29 @@
 {
-	"version":"0.1",
-	"files": {
-		"classes/recaptcha.class.php": "classes/adapters/fraudprotection/recaptcha.class.php",
-		"templates/index.php": "templates/janitor/modules/fraudprotection/recaptcha/index.php",
-
-		"www/css/s-recaptcha.css": "www/janitor/css/setup/modules/s-recaptcha.css",
-		"www/js/m-recaptcha.js": "www/janitor/js/setup/modules/m-recaptcha.js"
-	}
+	"version": "0.1.1",
+	"files": [
+		{
+			"type": "class",
+			"src": "classes/adapters/recaptcha.class.php",
+			"dest": "classes/adapters/fraudprotection/recaptcha.class.php",
+			"digest": "sha256:cfa87e528c666136b4fda8747640e5863f97554c6daca7a1f3184a69d4a67f11"
+		},
+		{
+			"type": "settings-css",
+			"src": "www/settings/css/s-fraudprotection-recaptcha.css",
+			"dest": "www/janitor/css/setup/modules/s-fraudprotection-recaptcha.css",
+			"digest": "sha256:32ed0e242d03da043b8d843e17e5dcf30fa2f02fe71ede0b9f78b32b3ab322a6"
+		},
+		{
+			"type": "settings-js",
+			"src": "www/settings/js/m-fraudprotection-recaptcha.js",
+			"dest": "www/janitor/js/setup/modules/m-fraudprotection-recaptcha.js",
+			"digest": "sha256:11da7de8aeec6312c8a934b21ca890cc8fa6df3596e4040c48078d5bfe15f275"
+		},
+		{
+			"type": "settings-template",
+			"src": "templates/settings/index.php",
+			"dest": "templates/janitor/modules/fraudprotection/recaptcha/index.php",
+			"digest": "sha256:e38283a0dfa679425853a3b18483b34311ed122ebddccc457797d369a27ea12d"
+		}
+	]
 }

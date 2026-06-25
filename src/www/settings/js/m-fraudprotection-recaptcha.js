@@ -1,4 +1,4 @@
-Util.Modules["recaptcha"] = new function() {
+Util.Modules["fraudprotectionRecaptcha"] = new function() {
 	this.init = function(div) {
 
 		var form = u.qs("form", div);
